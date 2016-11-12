@@ -1,0 +1,29 @@
+.RepoListItem {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #AAA;
+  border-radius: 2px;
+
+  text-align: left;
+  list-style: none;
+}
+
+.RepoListItem-name {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+.RepoListItem-metrics {
+  display: inline-flex;
+}
+
+@media (min-width: 500px) {
+  .RepoListItem {
+    flex-direction: row;
+  }
+}
