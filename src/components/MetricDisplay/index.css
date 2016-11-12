@@ -1,0 +1,14 @@
+.MetricDisplay {
+  margin-right: 0.5em;
+  padding: 0.25em 0;
+  max-width: 3em;
+  white-space: nowrap;
+}
+
+.MetricDisplay-icon {
+  margin-right: 0.5em;
+}
+
+.MetricDisplay-value {
+  font-weight: bold;
+}
