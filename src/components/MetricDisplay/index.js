@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Eye from 'react-icons/lib/go/eye';
 import Star from 'react-icons/lib/go/star';
 import RepoForked from 'react-icons/lib/go/repo-forked';
@@ -12,11 +12,12 @@ const icons = {
 
 class MetricDisplay extends Component {
   static defaultProps = {
+    icon: 'eye',
     value: 0
   };
 
   static propTypes = {
-    icon: React.PropTypes.oneOf(['eye', 'star', 'fork']),
+    icon: PropTypes.oneOf(['eye', 'star', 'fork']),
     value: 0
   };
 
