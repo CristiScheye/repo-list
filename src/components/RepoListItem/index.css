@@ -1,12 +1,14 @@
+@import "../../style-variables.css";
+
+
 .RepoListItem {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 
-  margin: 1em;
-  padding: 1em;
-  border: 1px solid #AAA;
-  border-radius: 2px;
+  margin: var(--padding-default);
+  padding: var(--padding-default);
+  border-bottom: var(--border-default);
 
   text-align: left;
   list-style: none;
@@ -15,7 +17,12 @@
 .RepoListItem-name {
   font-size: 1.5em;
   text-decoration: none;
-  color: black;
+  color: var(--color-link);
+}
+
+
+.RepoListItem-name:hover {
+  text-decoration: underline;
 }
 
 .RepoListItem-metrics {

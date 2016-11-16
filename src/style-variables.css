@@ -1,0 +1,17 @@
+/* colors from http://clrs.cc/ */
+:root {
+  --color-link: #0074D9;
+
+  --color-text-default: #111;
+  --color-text-light: #FFF;
+
+  --color-background-default: #FFF;
+  --color-background-header: #7FDBFF;
+  --color-background-accent: #001F3F;
+
+  --border-default: 1px solid #001f3f;
+
+  --padding-default: 1em;
+  --padding-large: 2em;
+  --padding-small: 0.5em;
+}
