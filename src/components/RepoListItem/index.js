@@ -3,21 +3,12 @@ import MetricDisplay from '../MetricDisplay/'
 import './index.css';
 
 class RepoListItem extends Component {
-  static defaultProps = {
-    name: 'My Favorite Repo',
-    description: 'Some beautiful code',
-    url: 'http://www.lipsum.com/',
-    watchCount: 10,
-    starCount: 123,
-    forkCount: 9
-  };
-
   static propTypes = {
-    name: PropTypes.string,
-    description: PropTypes.string,
-    watchCount: PropTypes.number,
-    starCount: PropTypes.number,
-    forkCount: PropTypes.number
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    watchCount: PropTypes.number.isRequired,
+    starCount: PropTypes.number.isRequired,
+    forkCount: PropTypes.number.isRequired
   };
 
   render() {

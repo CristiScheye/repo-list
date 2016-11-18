@@ -11,11 +11,6 @@ const icons = {
 }
 
 class MetricDisplay extends Component {
-  static defaultProps = {
-    icon: 'eye',
-    value: 0
-  };
-
   static propTypes = {
     icon: PropTypes.oneOf(['eye', 'star', 'fork']),
     value: PropTypes.number
