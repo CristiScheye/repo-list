@@ -1,7 +1,12 @@
 import React, { Component, PropTypes } from 'react';
-import logo from '../../images/GitHub-Mark-Light-64px.png';
 import './index.css';
 import RepoList from '../RepoList/'
+
+// compilation issues with importing png in tests
+const logo =
+  process.env.NODE_ENV === 'test'
+  ? '../../images/GitHub-Mark-Light-64px.png'
+  : require('../../images/GitHub-Mark-Light-64px.png');
 
 // fetch polyfill for ie and safari
 import 'whatwg-fetch';
@@ -24,7 +29,7 @@ class App extends Component {
   }
 
   componentDidMount () {
-    fetch('https://api.github.com/users/cristischeye/repos')
+    fetch(`https://api.github.com/users/${this.props.username}/repos`)
     .then(res => {
       return res.json()
     })
