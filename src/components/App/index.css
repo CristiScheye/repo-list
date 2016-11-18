@@ -1,0 +1,58 @@
+@import "../../style-variables.css";
+
+.App {
+  text-align: left;
+}
+
+.App-gh-logo {
+  padding-right: var(--padding-default);
+}
+
+.App-header {
+  padding: var(--padding-large) var(--padding-small);
+
+  background-color: var(--color-background-header);
+  color: var(--color-text-default);
+  font-size: 1.5em;
+}
+
+.App-intro, .App-intro > a {
+  display: flex;
+  align-items: center;
+
+  padding: var(--padding-small);
+  margin: 0;
+
+  background-color: var(--color-background-accent);
+  font-size: 1em;
+  color: var(--color-text-light);
+}
+
+.App-intro > a {
+  text-decoration: none;
+  color: var(--color-text-light);
+}
+
+@media (min-width: 500px) {
+  .App {
+    text-align: center;
+  }
+
+  .App-header {
+    /* it's a little weird to have the font size
+    decrease on snap, but... it looks better! */
+    font-size: 2.5em;
+  }
+
+  .App-intro {
+    padding: 0 var(--padding-default);
+    font-size: 1.5em;
+    justify-content: center;
+  }
+
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
