@@ -24,7 +24,12 @@ class RepoListItem extends Component {
     return (
       <li className="RepoListItem">
         <div>
-          <a className="RepoListItem-name" href={this.props.url} >{this.props.name}</a>
+          <a
+            className="RepoListItem-name"
+            href={this.props.url}
+            target="_blank">
+              {this.props.name}
+          </a>
           <p className="RepoListItem-description">{this.props.description}</p>
         </div>
         <div className="RepoListItem-metrics">

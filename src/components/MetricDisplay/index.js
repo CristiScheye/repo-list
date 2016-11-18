@@ -18,7 +18,7 @@ class MetricDisplay extends Component {
 
   static propTypes = {
     icon: PropTypes.oneOf(['eye', 'star', 'fork']),
-    value: 0
+    value: PropTypes.number
   };
 
   render() {

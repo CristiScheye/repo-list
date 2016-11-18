@@ -17,8 +17,9 @@ class RepoList extends Component {
     return (
       <ul className="RepoList">
         {
-          this.props.repoData.map((data) => {
-            return React.createElement(this.props.ListCell, data)
+          this.props.repoData.map((data, idx) => {
+            return React.createElement(this.props.ListCell,
+              Object.assign({key: `RepoListItem-${idx}`}, data))
           })
         }
       </ul>
